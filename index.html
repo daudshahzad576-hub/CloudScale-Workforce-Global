@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudScale Workforce Global Engine | On-Demand Enterprise Tech Talent</title>
+    <style>
+        :root {
+            --bg-body: #05070b;
+            --bg-card: #0f172a;
+            --border-line: #1e293b;
+            --text-muted: #94a3b8;
+            --text-light: #f8fafc;
+            --accent-blue: #2563eb;
+            --accent-cyan: #06b6d4;
+            --accent-success: #10b981;
+        }
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-muted);
+            margin: 0;
+            padding: 40px 20px;
+        }
+        .wrapper { max-width: 1200px; margin: 0 auto; }
+        
+        /* Hero Section */
+        .hero-box {
+            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+            border: 1px solid var(--border-line);
+            border-radius: 16px;
+            padding: 40px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+        .hero-title h1 { margin: 0 0 10px 0; color: var(--text-light); font-size: 28px; font-weight: 800; }
+        .hero-title p { margin: 0; font-size: 14px; color: var(--text-muted); }
+        .hero-badge {
+            background: rgba(6, 182, 212, 0.1); color: var(--accent-cyan); border: 1px solid rgba(6, 182, 212, 0.3);
+            padding: 10px 18px; border-radius: 8px; font-size: 13px; font-weight: 700; text-align: right;
+        }
+
+        /* Value Props Grid */
+        .props-grid {
+            display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 35px;
+        }
+        .prop-card {
+            background: var(--bg-card); border: 1px solid var(--border-line); padding: 24px; border-radius: 12px;
+        }
+        .prop-card h3 { margin: 0 0 8px 0; color: var(--text-light); font-size: 16px; }
+        .prop-card p { margin: 0; font-size: 13px; }
+
+        /* Talent Roster Section */
+        .roster-card {
+            background: var(--bg-card); border: 1px solid var(--border-line); border-radius: 16px; padding: 30px;
+        }
+        .roster-header {
+            display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px;
+            border-bottom: 1px solid var(--border-line); padding-bottom: 15px;
+        }
+        .roster-header h2 { margin: 0; color: var(--text-light); font-size: 20px; }
+        
+        table { width: 100%; border-collapse: collapse; text-align: left; }
+        th { color: var(--text-muted); font-size: 12px; text-transform: uppercase; font-weight: 700; padding: 12px; border-bottom: 1px solid var(--border-line); background: rgba(15, 23, 42, 0.5); }
+        td { padding: 16px 12px; border-bottom: 1px solid var(--border-line); font-size: 14px; color: var(--text-light); }
+        
+        .tech-pill {
+            background: rgba(37, 99, 235, 0.15); color: #60a5fa; border: 1px solid rgba(37, 99, 235, 0.3);
+            padding: 4px 8px; border-radius: 6px; font-size: 11px; font-weight: 600; display: inline-block; margin-right: 4px;
+        }
+        .status-ready { color: var(--accent-success); font-weight: 600; font-size: 12px; display: flex; align-items: center; gap: 5px; }
+        .status-ready::before { content: ''; width: 6px; height: 6px; background: var(--accent-success); border-radius: 50%; }
+
+        .btn-deploy {
+            background: var(--accent-blue); color: white; border: none; padding: 8px 16px;
+            border-radius: 6px; font-weight: 600; font-size: 12px; cursor: pointer; transition: opacity 0.2s;
+        }
+        .btn-deploy:hover { opacity: 0.85; }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        
+        <!-- Hero Section -->
+        <div class="hero-box">
+            <div class="hero-title">
+                <h1>CloudScale Workforce Global Engine</h1>
+                <p>On-Demand Enterprise Engineering Pipeline for USA & Canada Corporations</p>
+            </div>
+            <div class="hero-badge">
+                🇺🇸 / 🇨🇦 Direct Employer Access<br>
+                <span style="font-size: 11px; font-weight: normal; color: #94a3b8;">100+ Verified Ready-to-Hire Resources</span>
+            </div>
+        </div>
+
+        <!-- Value Propositions -->
+        <div class="props-grid">
+            <div class="prop-card">
+                <h3>Pre-Vetted Senior Tier</h3>
+                <p>Every software engineer and cloud architect undergoes rigorous technical & compliance vetting.</p>
+            </div>
+            <div class="prop-card">
+                <h3>48-Hour Onboarding</h3>
+                <p>Instant contract dispatch and secure NDA integration tailored for North American enterprise standards.</p>
+            </div>
+            <div class="prop-card">
+                <h3>Zero Management Overhead</h3>
+                <p>Direct payroll compliance, fully managed remote infrastructure, and risk-free scaling.</p>
+            </div>
+        </div>
+
+        <!-- Talent Roster Table -->
+        <div class="roster-card">
+            <div class="roster-header">
+                <h2>Active On-Demand Engineering Roster</h2>
+                <span style="font-size: 13px; color: var(--accent-cyan); font-weight: 600;">Showing 100% Verified Profiles</span>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Candidate Name & Title</th>
+                        <th>Core Domain</th>
+                        <th>Tech Stack & Specialization</th>
+                        <th>Region</th>
+                        <th>Availability Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <strong style="font-size: 15px;">Daud Shahzad</strong><br>
+                            <span style="font-size: 12px; color: var(--text-muted);">Principal Cloud Infrastructure Architect</span>
+                        </td>
+                        <td>Cloud & DevOps</td>
+                        <td>
+                            <span class="tech-pill">AWS</span>
+                            <span class="tech-pill">Kubernetes</span>
+                            <span class="tech-pill">Terraform</span>
+                        </td>
+                        <td>Toronto, Canada</td>
+                        <td><span class="status-ready">Immediate Deployment</span></td>
+                        <td><button class="btn-deploy" onclick="alert('Interview packet dispatched to enterprise hiring desk for Daud Shahzad.')">Hire / Interview</button></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong style="font-size: 15px;">Marcus Vance</strong><br>
+                            <span style="font-size: 12px; color: var(--text-muted);">Senior Enterprise Software Engineer</span>
+                        </td>
+                        <td>Full-Stack Systems</td>
+                        <td>
+                            <span class="tech-pill">React</span>
+                            <span class="tech-pill">Node.js</span>
+                            <span class="tech-pill">TypeScript</span>
+                        </td>
+                        <td>New York, USA</td>
+                        <td><span class="status-ready">Immediate Deployment</span></td>
+                        <td><button class="btn-deploy" onclick="alert('Interview packet dispatched to enterprise hiring desk for Marcus Vance.')">Hire / Interview</button></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong style="font-size: 15px;">Elena Rostova</strong><br>
+                            <span style="font-size: 12px; color: var(--text-muted);">Cloud Security & Compliance Lead</span>
+                        </td>
+                        <td>Cybersecurity</td>
+                        <td>
+                            <span class="tech-pill">SOC2 / HIPAA</span>
+                            <span class="tech-pill">IAM</span>
+                            <span class="tech-pill">Zero Trust</span>
+                        </td>
+                        <td>Vancouver, Canada</td>
+                        <td><span class="status-ready">Available in 24h</span></td>
+                        <td><button class="btn-deploy" onclick="alert('Interview packet dispatched to enterprise hiring desk for Elena Rostova.')">Hire / Interview</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+</body>
+</html>
